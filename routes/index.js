@@ -1,24 +1,16 @@
 const express = require("express");
-const authRotuer = require("./authRouter");
-const comboDataRouter = require("./comboDataRouter");
-const formDataRouter = require("./formDataRouter");
-const gameResultsRouter = require("./gameResultsRouter");
-const gridDataRouter = require("./gridDataRouter");
-const matchRouter = require("./matchRouter");
+const crudRouter = require("./crudRouter");
 const menuRouter = require("./menuRouter");
-const profileRouter = require("./profileRouter");
+const loginRouter = require("./loginRouter");
+const queryRouter = require("./queryRouter");
 
 function routerApi(app) {
   const router = express.Router();
   app.use("/api/v1", router);
-  router.use("/auth", authRotuer);
-  router.use("/comboData", comboDataRouter);
-  router.use("/formData", formDataRouter);
-  router.use("/gameResults", gameResultsRouter);
-  router.use("/gridData", gridDataRouter);
-  router.use("/matchData", matchRouter);
-  router.use("/menuData", menuRouter);
-  router.use("/profile", profileRouter);
+  router.use("/Crud", crudRouter);
+  router.use("/Menu", menuRouter);
+  router.use("/Login", loginRouter);
+  router.use("/Query", queryRouter);
 }
 
 module.exports = routerApi;

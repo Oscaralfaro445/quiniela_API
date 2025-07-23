@@ -1,11 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const { menuData } = require("../bd/menuData");
+const { menu } = require("../bd/menu");
 
-router.get("/", (req, res) => {
+router.post("/", (req, res) => {
   res.status(200).json({
-    data: menuData,
-    message: "Datos enviados de manera correcta",
+    estatus: 1,
+    data: menu,
+    errorUs: null,
+    errorNeg: null,
   });
 });
 
