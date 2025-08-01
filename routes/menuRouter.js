@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const { menu } = require("../bd/menu");
+const { menuAdmin } = require("../bd/menu");
 
 router.post("/", (req, res) => {
   res.status(200).json({
     estatus: 1,
-    data: menu,
+    data: menuAdmin,
     errorUs: null,
     errorNeg: null,
   });

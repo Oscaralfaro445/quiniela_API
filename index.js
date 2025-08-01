@@ -9,7 +9,10 @@ const port = 3001;
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://tf0tfk68-3000.usw3.devtunnels.ms",
+    ],
     credentials: true,
   })
 );
