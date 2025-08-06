@@ -6,6 +6,7 @@ const { resultadosEquipo } = require("../bd/resultadosEquipo");
 const { survivor } = require("../bd/survivor");
 const { survivorRanking } = require("../bd/survivorRanking");
 const { tablaMarcadores } = require("../bd/tablaMarcadores");
+const { menu } = require("../bd/menu");
 
 router.post("/Consulta", (req, res) => {
   const { idProceso, idQuery } = req.body;
@@ -74,7 +75,9 @@ router.post("/Consulta", (req, res) => {
 
 router.post("/Procedure", (req, res) => {
   const { idProceso, idProcedure } = req.body;
+  const body = req.body;
   const { authorization } = req.headers;
+  console.log("Body recibido:", body);
   console.log("Consulta recibida:", { idProceso, idProcedure });
   console.log("Parametros recibidos en los headers:", { authorization });
 
@@ -88,6 +91,38 @@ router.post("/Procedure", (req, res) => {
             errorUs: null,
             errorNeg: null,
           });
+      }
+      break;
+
+    case 6:
+      switch (idProcedure) {
+        case 3:
+          res.json({
+            estatus: 1,
+            data: [
+              {
+                idEquipoSuv: 13,
+                nomEquipo: "Cleveland Browns",
+                bResucita: true,
+                costoQuiniela: 150,
+              },
+            ],
+            errorUs: null,
+            errorNeg: null,
+          });
+      }
+      break;
+
+    case 12:
+      switch (idProcedure) {
+        case 7:
+          res.json({
+            estatus: 1,
+            data: menu,
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
       }
       break;
   }
