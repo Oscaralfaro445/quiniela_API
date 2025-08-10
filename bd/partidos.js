@@ -1,6 +1,6 @@
 export const partidos = [
   {
-    quin1ela: [
+    quiniela: [
       {
         Partido: 1,
         IdL: 30,

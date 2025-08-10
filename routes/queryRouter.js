@@ -7,6 +7,7 @@ const { survivor } = require("../bd/survivor");
 const { survivorRanking } = require("../bd/survivorRanking");
 const { tablaMarcadores } = require("../bd/tablaMarcadores");
 const { menu } = require("../bd/menu");
+const { pagos } = require("../bd/pagos");
 
 router.post("/Consulta", (req, res) => {
   const { idProceso, idQuery } = req.body;
@@ -70,6 +71,20 @@ router.post("/Consulta", (req, res) => {
           });
           break;
       }
+      break;
+
+    case 7:
+      switch (idQuery) {
+        case "7":
+          res.json({
+            estatus: 1,
+            data: pagos,
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
+      }
+      break;
   }
 });
 
