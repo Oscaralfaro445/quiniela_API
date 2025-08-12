@@ -55,6 +55,19 @@ router.post("/BulkU", (req, res) => {
           break;
       }
       break;
+
+    case 7:
+      switch (model) {
+        case "Q_SURVIVOR":
+          res.json({
+            estatus: 1,
+            data: [{ contador: 3 }],
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
+      }
+      break;
   }
 });
 

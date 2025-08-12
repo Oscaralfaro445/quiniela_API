@@ -149,7 +149,7 @@ export const menu = [
             cveAplicacion: "NFL",
             cveMenu: "F_PRO_CIERRE_PER",
             cveMenuP: "MN_PROCESOS",
-            descMenu: "Proceso cierre Periodo",
+            descMenu: "Proceso Cierre Periodo",
             icono: "monitor-x",
             numNivel: 2,
             urlMenu: "/processes/periodClosing",

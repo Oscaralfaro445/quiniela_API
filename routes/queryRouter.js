@@ -8,6 +8,7 @@ const { survivorRanking } = require("../bd/survivorRanking");
 const { tablaMarcadores } = require("../bd/tablaMarcadores");
 const { menu } = require("../bd/menu");
 const { pagos } = require("../bd/pagos");
+const { consistencia } = require("../bd/consistencia");
 
 router.post("/Consulta", (req, res) => {
   const { idProceso, idQuery } = req.body;
@@ -85,6 +86,19 @@ router.post("/Consulta", (req, res) => {
           break;
       }
       break;
+
+    case 10:
+      switch (idQuery) {
+        case 8:
+          res.json({
+            estatus: 1,
+            data: consistencia,
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
+      }
+      break;
   }
 });
 
@@ -97,6 +111,19 @@ router.post("/Procedure", (req, res) => {
   console.log("Parametros recibidos en los headers:", { authorization });
 
   switch (idProceso) {
+    case 3:
+      switch (idProcedure) {
+        case 4:
+          res.json({
+            estatus: 1,
+            data: 1,
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
+      }
+      break;
+
     case 4:
       switch (idProcedure) {
         case 2:
@@ -125,6 +152,32 @@ router.post("/Procedure", (req, res) => {
             errorUs: null,
             errorNeg: null,
           });
+      }
+      break;
+
+    case 8:
+      switch (idProcedure) {
+        case 5:
+          res.json({
+            estatus: 1,
+            data: [{ Contador: 0 }],
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
+      }
+      break;
+
+    case 9:
+      switch (idProcedure) {
+        case 6:
+          res.json({
+            estatus: 1,
+            data: [{ Contador: 0 }],
+            errorUs: null,
+            errorNeg: null,
+          });
+          break;
       }
       break;
 
