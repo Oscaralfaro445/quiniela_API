@@ -89,7 +89,7 @@ router.post("/Consulta", (req, res) => {
 
     case 10:
       switch (idQuery) {
-        case 8:
+        case "8":
           res.json({
             estatus: 1,
             data: consistencia,
