@@ -101,7 +101,7 @@ export const tablaMarcadores = [
   {
     partido: 12,
     idEquipo1: 28,
-    nomEquipo1: "Los Angeles Chargers ",
+    nomEquipo1: "Los Angeles Chargers",
     marcVisita: 27,
     Equipo2: 2,
     nomEquipo2: "Cincinnati Bengals",

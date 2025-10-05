@@ -1,0 +1,98 @@
+export const ganancias = [
+  {
+    nomParticipante: "HUMBERTO LOPEZ",
+    ingresos: 900,
+    survivors: 0,
+    ganancia: 900,
+  },
+  {
+    nomParticipante: "LUIS O. ALVAREZ",
+    ingresos: 400,
+    survivors: 0,
+    ganancia: 400,
+  },
+  {
+    nomParticipante: "DUSTIN CRUZ",
+    ingresos: 300,
+    survivors: 0,
+    ganancia: 300,
+  },
+  {
+    nomParticipante: "EFREN AVILA",
+    ingresos: 400,
+    survivors: 150,
+    ganancia: 250,
+  },
+  {
+    nomParticipante: "MARIO LOPEZ",
+    ingresos: 200,
+    survivors: 0,
+    ganancia: 200,
+  },
+  {
+    nomParticipante: "CHRIS SALAZAR",
+    ingresos: 300,
+    survivors: 150,
+    ganancia: 150,
+  },
+  {
+    nomParticipante: "GUSTAVO GARZA",
+    ingresos: 100,
+    survivors: 0,
+    ganancia: 100,
+  },
+  {
+    nomParticipante: "JONATAN PARRA",
+    ingresos: 100,
+    survivors: 0,
+    ganancia: 100,
+  },
+  {
+    nomParticipante: "DANIEL LOPEZ",
+    ingresos: 100,
+    survivors: 0,
+    ganancia: 100,
+  },
+  {
+    nomParticipante: "GUSTAVO SOLIS",
+    ingresos: 100,
+    survivors: 0,
+    ganancia: 100,
+  },
+  {
+    nomParticipante: "ALEJANDRO ORTEGA",
+    ingresos: 200,
+    survivors: 150,
+    ganancia: 50,
+  },
+  {
+    nomParticipante: "HECTOR ALVAREZ",
+    ingresos: 0,
+    survivors: 0,
+    ganancia: 0,
+  },
+  {
+    nomParticipante: "NATALIA CASTILLO",
+    ingresos: 0,
+    survivors: 0,
+    ganancia: 0,
+  },
+  {
+    nomParticipante: "DIEGO OJEDA",
+    ingresos: 0,
+    survivors: 150,
+    ganancia: -150,
+  },
+  {
+    nomParticipante: "MISAEL LOPEZ",
+    ingresos: 0,
+    survivors: 150,
+    ganancia: -150,
+  },
+  {
+    nomParticipante: "PEDRO CANEDO",
+    ingresos: 100,
+    survivors: 300,
+    ganancia: -200,
+  },
+];
